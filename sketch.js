@@ -25,7 +25,7 @@ function setup() {
   scene.addImage(backgroundImage);
   scene.scale = 2.5
   
-  // creating bow to shoot arrow
+  // crear el arco para disparar las flechas
   bow = createSprite(380,220,20,50);
   bow.addImage(bowImage); 
   bow.scale = 1;
@@ -45,7 +45,7 @@ function draw() {
   //arco en movimiento
   bow.y = World.mouseY
   
-   // suelta la flecha cuando se presione la tecla de espacio
+   // suelta la flecha cuando se presione la barra espaciadora
   if (keyDown("space")) {
     createArrow();
     
